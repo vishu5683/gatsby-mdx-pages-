@@ -1,7 +1,20 @@
 module.exports = {
   plugins: [
      // Your other plugins...
-     `gatsby-plugin-mdx`,
+     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
+    
      {
        resolve: `gatsby-source-filesystem`,
        options: {
@@ -16,6 +29,12 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+
+    `gatsby-plugin-sharp`,
+   
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
  
   ],
 }

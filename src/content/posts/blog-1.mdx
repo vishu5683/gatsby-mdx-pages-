@@ -1,7 +1,151 @@
 ---
-title: Blog Post 1
+# title: Blog Post 1
 slug: /blog-1
 contenType: blog
+featuredImage: pic2.jpg
+
 ---
 
-hello world1
+import "../styles/blog.css"
+
+
+<div className="custom-image-wrapper" tabIndex="-1" id="gatsby-focus-wrapper">
+  <img
+    className="gatsby-resp-image-image"
+    alt="Banner"
+    title=""
+    src={require('../assets/banner.jpg').default}
+  />
+</div>
+
+
+
+
+
+
+
+
+ <div className="container" style={{ marginBottom: '50px' }}>
+
+
+
+# How to Pair with Sternet Smart App
+
+##### **Step 1**: Download the Huelite Application from Play Store/App Store respectively.
+
+
+
+- Sternet Smart [app](#) for iOS
+- Sternet Smart [app](https://play.google.com/store/apps/details?id=com.sternet.sternetsmart&pcampaignid=web_share) for Android
+
+<div style={{ width: "30vw", maxWidth: "200px", margin: "0 auto" }}>
+![Image 1](../assets/pic2.jpg)
+</div>
+
+##### **Step 2**: Install and Register
+
+Once the app is installed, register an account with Sternet, or login with an existing account.
+
+<div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', margin: '0 5vw' }}>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic3.jpg').default} alt="Step 2 Image 1" style={{ width: '100%', height: 'auto' }} />
+  </div>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic4.jpg').default} alt="Step 2 Image 2" style={{ width: '100%', height: 'auto' }} />
+  </div>
+</div>
+
+
+
+##### **Step 3**: Tap on “+” sign top right corner or “Add Device” button as shown below.
+
+<div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <div style={{ width: '40vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic5.jpg').default} alt="Image 3" style={{ width: '100%' }} />
+  </div>
+</div>
+
+
+##### **Step 4**: Ensure the switch is turned ON and the Sternet Smart Device is blinking, then tap the 'Next' button.
+
+<code>If the device is not blinking, Tap on the 'Not Blinking' button. That will forward you to the reset instructions page.</code>
+<br/>
+<br/>
+<div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <div style={{ width: '40vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic6.jpg').default} alt="Image 4" style={{ width: '100%' }} />
+  </div>
+</div>
+
+##### **Step 5**: Allow location access to the Aternet Smart application and enable your phone to connect to the Sternet device hotspot, i.e., `ST_Smart` WiFi.
+
+<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', margin: '0 5vw' }}>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic7.jpg').default} alt="Image 5" style={{ width: '100%' }} />
+  </div>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic8.jpg').default} alt="Image 6" style={{ width: '100%' }} />
+  </div>
+</div>
+<br/>
+<br/>
+<div className="yellow-box" style={{ display: 'flex', justifyContent: 'center' }}>
+  <div style={{ backgroundColor: 'rgba(241, 196, 15, 0.667)', borderRadius: '5px', padding: '10px', borderLeft: '5px solid rgb(241, 196, 15)', maxWidth: '600px', minWidth: '300px' }}>
+    <p>Make sure mobile data is turned off & the distance between the LED batten and home Wi-Fi shouldn’t be greater than 4 meters while pairing. <a href="/support/pairing-troubleshoot">Not able to proceed forward?</a></p>
+  </div>
+</div>
+
+##### **Step 6**: Upon successful configuration, a list of Wi-Fi networks will appear. Choose your 2.4GHz Wi-Fi and enter the password.
+
+ <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', margin: '0 5vw' }}>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic9.jpg').default} alt="Step 6 Image 1" style={{ width: '100%' }} />
+  </div>
+  <div style={{ width: '30vw', maxWidth: '200px' }}>
+    <img src={require('../assets/pic10.jpg').default} alt="Step 6 Image 2" style={{ width: '100%' }} />
+  </div>
+</div>
+<br/>
+<br/>
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ backgroundColor: 'rgba(241, 196, 15, 0.667)', borderRadius: '5px', padding: '10px', borderLeft: '5px solid rgb(241, 196, 15)', maxWidth: '600px', minWidth: '300px' }}>
+        <h5>Only 2.4G wifi is supported with WPA/WPA2 encryption security. Ensure the following points:</h5>
+        <ul>
+          <li>
+            <p>Make sure the phone should be connected with “ST_Smart” Wi-Fi while entering the password. If not, connect manually and then enter the home network password.</p>
+          </li>
+          <li>
+            <p>Make sure that only one unpaired device is ON at a time.</p>
+          </li>
+          <li>
+            <p>The signal range of the home network should be greater than -60dB for a smooth connectivity experience. If the signal is weak, you’ll need a WiFi extender.</p>
+          </li>
+          <li>
+            <p>Open networks are not supported. Consider choosing a WiFi network with WPA/WPA2 password encryption scheme.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+##### **Step 7**: Now wait up to 45 seconds, and let the device connect automatically.
+
+    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ width: '40vw', maxWidth: '200px' }}>
+        <img src={require('../assets/pic11.jpg').default} alt="Image" style={{ width: '100%' }} />
+      </div>
+    </div>
+
+##### **Step 8**: Successful configuration will appear. Set the name of the lights. Afterward, you will be directed to the Smart Light Dashboard.
+
+ <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', margin: '0 5vw' }}>
+      <div style={{ width: '30vw', maxWidth: '200px' }}>
+        <img src={require('../assets/pic12.jpg').default} alt="Image 1" style={{ width: '100%', maxWidth: '100%' }} />
+      </div>
+      <div style={{ width: '30vw', maxWidth: '200px' }}>
+        <img src={require('../assets/pic13.jpg').default} alt="Image 2" style={{ width: '100%', maxWidth: '100%' }} />
+      </div>
+    </div>
+
+#### **Your device is successfully paired! Enjoy!!**
+
+</div>
