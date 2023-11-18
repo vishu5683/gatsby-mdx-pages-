@@ -1,10 +1,14 @@
 {
   "name": "gatsby-starter-hello-world",
+  "homepage": "https://github.com/vishu5683/gatsby.mdx.pages.github.io.git",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public ",
+    "deploy1": "gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -32,5 +36,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

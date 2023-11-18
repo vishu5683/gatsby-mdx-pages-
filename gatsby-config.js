@@ -1,6 +1,16 @@
 module.exports = {
+
+  pathPrefix: "/gatsby.mdx.pages.github.io",
+
+  siteMetadata: {
+   title: "My first blog page",
+ },
+ 
   plugins: [
      // Your other plugins...
+
+
+
      {
       resolve: `gatsby-plugin-mdx`,
       options: {
